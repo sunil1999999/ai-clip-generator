@@ -1,0 +1,6 @@
+{
+  "name": "AI Clip Generator & Video Editor",
+  "description": "An interactive AI-powered long-form video to short viral clips generator and online editor with auto captions, framing, speaker detection, and optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
