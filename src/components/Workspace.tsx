@@ -9,6 +9,7 @@ import VideoPlayerSim from './VideoPlayerSim';
 import TranscriptEditor from './TranscriptEditor';
 import BrandTemplatesConfig from './BrandTemplatesConfig';
 import SocialScheduler from './SocialScheduler';
+import ClipExporter from './ClipExporter';
 
 import { translations } from './Translations';
 
@@ -702,9 +703,10 @@ export default function Workspace({
 
               </div>
 
-              {/* Row 3: AI Social Scheduler & Direct Post Queue */}
-              <div className="w-full">
+              {/* Row 3: AI Social Optimizer & Local Clip Exporter Core */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                 <SocialScheduler clip={activeClip} />
+                <ClipExporter clip={activeClip} videoUrl={videoUrl || initialProject?.videoUrl || ""} />
               </div>
             </>
           ) : (
